@@ -1,0 +1,81 @@
+@use '../util' as *;
+
+.nav {
+  max-width: rem(968);
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo,
+  &__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+  }
+
+  &__logo:hover {
+    color: var(--primary);
+  }
+
+  &__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  &nav__toggle:hover {
+    color: var(--primary);
+  }
+
+  &__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+  }
+
+  &__link:hover {
+    color: var(--primary);
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+  }
+
+  &__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary);
+  }
+
+  &__close:hover {
+    color: var(--primary-alt);
+  }
+
+  .show-menu {
+    bottom: 0;
+  }
+
+  @include breakpoint-down(small) {
+    &__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.4rem 4rem;
+      box-shadow: 0 1px 4px rgb(0, 0, 0, 0.15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: 0.3s;
+    }
+  }
+}
