@@ -1,1 +1,25 @@
 @use '../util' as *;
+
+.button {
+  display: inline-block;
+  background-color: var(--primary);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+
+  &:hover {
+    background-color: var(--primary-alt);
+  }
+
+  &__icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-2);
+    transition: 0.3s;
+  }
+
+  &--flex {
+    display: inline-flex;
+    align-items: center;
+  }
+}
