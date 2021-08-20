@@ -1,0 +1,57 @@
+@use '../util' as *;
+
+.skills {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  &__title {
+    display: flex;
+    margin-bottom: var(--mb-2);
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  &__icon {
+    align-self: center;
+    margin-right: 0.5rem;
+  }
+
+  &__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+}
+
+.ai-javascript-fill {
+  color: hsl(52, 84%, 63%);
+}
+.ai-react-fill {
+  color: hsl(192, 95%, 68%);
+}
+.ai-nextjs-fill {
+  color: hsl(206, 22%, 15%);
+}
+.ai-html-fill {
+  color: hsl(12, 77%, 52%);
+}
+.ai-css-fill {
+  color: hsl(228, 78%, 52%);
+}
+.ai-sass-fill {
+  color: hsl(331, 50%, 60%);
+}
+.iconify[data-icon="simple-icons:materialui"] {
+  color: hsl(199, 100%, 50%);
+}
+.iconify[data-icon="bx:bxl-tailwind-css"] {
+  color: hsl(189, 94%, 43%);
+}
+.ai-vscode-fill {
+  color: hsl(207, 100%, 42%);
+}
