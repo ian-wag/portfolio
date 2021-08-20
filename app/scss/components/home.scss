@@ -1,1 +1,83 @@
 @use '../util' as *;
+.home {
+  &__container {
+    gap: 1rem;
+  }
+
+  &__content {
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+  }
+
+  &__socials {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+
+  &__social-icon {
+    font-size: 1.25rem;
+    color: var(--primary);
+  }
+
+  &__social-icon:hover {
+    color: var(--primary-alt);
+  }
+
+  &__blob {
+    width: rem(200);
+    fill: var(--primary);
+  }
+
+  &__blob-img {
+    width: rem(220);
+  }
+
+  &__data {
+    grid-column: 1/3;
+  }
+
+  &__title {
+    font-size: var(--big-font-size);
+  }
+
+  &__subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-3);
+  }
+
+  &__description {
+    margin-bottom: var(--mb-6);
+  }
+
+  &__scroll {
+    //   display: none;
+  }
+
+  &__scroll-button {
+    color: var(--primary);
+    transition: 0.3s;
+  }
+
+  &__scroll-button:hover {
+    transform: translateY(0.25rem);
+  }
+
+  &__scroll-mouse {
+    font-size: 2rem;
+  }
+
+  &__scroll-name {
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-1);
+  }
+
+  &__scroll-arrow {
+    font-size: 1.25rem;
+  }
+}
