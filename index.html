@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- =========UNICONS========= -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-
     <!-- =========GOOGLE FONTS========= -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +12,18 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.1/css/line.css"
+    />
+    <link rel="shortcut icon" href="/app/assets/img/favicon.ico" />
+
     <title>Ian Wagner | Front-End Dev</title>
 
-    <link rel="stylesheet" href="/dist/style.css" />
+    <link type="text/css" rel="stylesheet" href="/dist/style.css" />
+
+    <!-- =========AKAR ICONS========= -->
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
 
     <script defer src="/dist/script.js"></script>
   </head>
@@ -33,17 +36,17 @@
           <ul class="nav__list grid">
             <li class="nav__item">
               <a href="#home" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i> Home
+                <i class="ai-home nav__icon"></i> Home
               </a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> About
+                <i class="ai-person nav__icon"></i> About
               </a>
             </li>
             <li class="nav__item">
               <a href="#skills" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> Skills
+                <i class="ai-file nav__icon"></i> Skills
               </a>
             </li>
             <li class="nav__item">
@@ -53,26 +56,25 @@
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contact Me
+                <i class="ai-envelope nav__icon"></i> Contact Me
               </a>
             </li>
           </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
+          <i class="ai-cross nav__close" id="nav-close"></i>
         </div>
         <div class="nav__btns">
           <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
+            <i class="ai-grid"></i>
           </div>
         </div>
       </nav>
     </header>
 
     <main class="main">
-      <!-- =========ABOUT========= -->
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
-            <div class="home__social">
+            <div class="home__socials">
               <a
                 href="https://www.linkedin.com/in/ian-wagner-144b13181/"
                 target="_blank"
@@ -90,9 +92,11 @@
                 <i class="uil uil-github-alt"></i>
               </a>
             </div>
+            <div class="home__img"></div>
           </div>
         </div>
       </section>
+      <!-- =========ABOUT========= -->
       <!-- =========SKILLS========= -->
       <!-- =========PORTFOLIO========= -->
       <!-- =========CONTACT ME========= -->
