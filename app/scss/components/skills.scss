@@ -7,7 +7,6 @@
   }
   &__content {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
   }
 
   &__title {
@@ -19,7 +18,8 @@
 
   &__icon {
     align-self: center;
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
+    font-size: 1.36rem;
   }
 
   &__name {
