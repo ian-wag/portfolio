@@ -1,0 +1,51 @@
+@use '../util' as *;
+
+.contact {
+  &__container {
+    row-gap: 3rem;
+    margin-bottom: var(--mb-2);
+  }
+
+  &__contacts > div:first-child {
+    margin-bottom: var(--mb-5);
+  }
+
+  &__icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-right: 0.75rem;
+  }
+
+  &__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+
+  &__content {
+    background-color: var(--input-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+  }
+
+  &__label {
+    font-size: var(--smaller-font);
+    color: var(--title-color);
+  }
+
+  &__input {
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+  }
+}
