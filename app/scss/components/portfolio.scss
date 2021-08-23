@@ -1,0 +1,39 @@
+@use '../util' as *;
+
+.portfolio {
+  &__container {
+    overflow: initial;
+  }
+
+  &__content {
+    padding: 0 1.5rem;
+  }
+
+  &__img {
+    width: rem(279);
+    border-radius: 0.5rem;
+    justify-self: center;
+  }
+
+  &__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-2);
+  }
+
+  &__description {
+    margin-bottom: var(--mb-6);
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    margin-bottom: var(--mb-8);
+  }
+
+  &__button:hover .button__icon {
+    transform: translateX(0.25rem);
+  }
+}
