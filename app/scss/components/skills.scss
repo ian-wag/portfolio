@@ -26,6 +26,23 @@
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
   }
+
+  @include breakpoint-down(xsmall) {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__title {
+      font-size: var(--normal-font-size);
+    }
+  }
+
+  @include breakpoint(medium) {
+    &__content {
+      width: 100%;
+      justify-items: center;
+    }
+  }
 }
 
 .ai-javascript-fill {
@@ -35,7 +52,7 @@
   color: hsl(192, 95%, 68%);
 }
 .ai-nextjs-fill {
-  color: hsl(206, 22%, 15%);
+  color: var(--nextjs-icon-color);
 }
 .ai-html-fill {
   color: hsl(12, 77%, 52%);

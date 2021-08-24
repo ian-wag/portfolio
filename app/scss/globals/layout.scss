@@ -21,6 +21,11 @@
   max-width: rem(768);
   margin-left: var(--mb-5);
   margin-right: var(--mb-5);
+
+  @include breakpoint-down(xsmall) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .grid {

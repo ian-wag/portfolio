@@ -53,4 +53,10 @@
   &__social {
     color: hsl(0, 0%, 96%);
   }
+
+  @include breakpoint(medium) {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }

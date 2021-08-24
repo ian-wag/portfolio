@@ -48,4 +48,14 @@
     outline: none;
     padding: 0.25rem 0.5rem 0.5rem 0;
   }
+
+  @include breakpoint(medium) {
+    &__container {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &__button {
+      justify-self: end;
+    }
+  }
 }

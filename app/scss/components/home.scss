@@ -80,4 +80,34 @@
   &__scroll-arrow {
     font-size: 1.25rem;
   }
+
+  @include breakpoint-down(xsmall) {
+    &__content {
+      grid-template-columns: 0.25fr 3fr;
+    }
+
+    &__blob {
+      width: rem(180);
+    }
+  }
+
+  @include breakpoint(medium) {
+    &__content {
+      grid-template-columns: max-content 1fr 1fr;
+    }
+
+    &__data {
+      grid-column: initial;
+    }
+
+    &__img {
+      order: 1;
+      justify-self: center;
+    }
+
+    &__blob {
+      width: rem(260);
+      fill: var(--primary);
+    }
+  }
 }

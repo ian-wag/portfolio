@@ -27,14 +27,28 @@
 
   &__buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   &__button {
     margin-bottom: var(--mb-8);
+    background-color: transparent;
+    color: var(--port-btn);
+    // border: 1px solid var(--primary);
+    padding: 0.2rem 0.5rem;
+  }
+
+  &__button:hover {
+    background-color: transparent;
   }
 
   &__button:hover .button__icon {
     transform: translateX(0.25rem);
+  }
+
+  @include breakpoint(medium) {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }

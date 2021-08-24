@@ -74,7 +74,7 @@
     align-items: center;
   }
 
-  @include breakpoint-down(small) {
+  @include breakpoint-down(medium) {
     &__menu {
       position: fixed;
       bottom: -100%;
@@ -87,6 +87,16 @@
       transition: 0.3s;
     }
   }
+
+  @include breakpoint-down(xsmall) {
+    &__menu {
+      padding: 2rem 0.25rem 4rem;
+    }
+
+    &__list {
+      column-gap: 0;
+    }
+  }
 }
 
 .scroll-nav {
@@ -95,7 +105,7 @@
 
 .scroll-top {
   position: fixed;
-  right: 1rem;
+  right: 0.5rem;
   bottom: -20%;
   background-color: var(--primary);
   opacity: 0.8;
@@ -109,7 +119,7 @@
   }
 
   &__icon {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: hsl(0, 0%, 100%);
   }
 }
