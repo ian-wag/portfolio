@@ -58,4 +58,14 @@
       justify-self: end;
     }
   }
+
+  @include breakpoint(large) {
+    &__form {
+      width: rem(460);
+    }
+
+    &__inputs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
