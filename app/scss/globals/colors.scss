@@ -9,6 +9,8 @@
   --input-color: hsl(var(--hue), 70%, 96%);
   --body-color: hsl(var(--hue), 60%, 99%);
   --container-color: hsl(0, 0%, 100%);
+  --nextjs-icon-color: hsl(206, 22%, 15%);
+  --port-btn: hsl(var(--hue), 69%, 61%);
 }
 
 body.dark-theme {
@@ -18,4 +20,6 @@ body.dark-theme {
   --input-color: hsl(var(--hue), 29%, 16%);
   --body-color: hsl(var(--hue), 28%, 12%);
   --container-color: hsl(var(--hue), 29%, 16%);
+  --nextjs-icon-color: hsl(206, 22%, 95%);
+  --port-btn: hsl(var(--hue), 100%, 78%);
 }
