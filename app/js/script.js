@@ -51,7 +51,6 @@ window.addEventListener("scroll", scrollActive);
 function scrollNav() {
   const nav = document.getElementById("header");
 
-  console.log(nav);
   if (this.scrollY >= 80) {
     nav.classList.add("scroll-nav");
   } else {
@@ -59,3 +58,16 @@ function scrollNav() {
   }
 }
 window.addEventListener("scroll", scrollNav);
+
+// =========SHOW SCOLL TO TOP ICON ON SCROLL =========
+function scrollToTop() {
+  const scrollToTop = document.querySelector("#scroll-up");
+
+  if (this.scrollY >= 500) {
+    scrollToTop.classList.add("show-scroll");
+  } else {
+    scrollToTop.classList.remove("show-scroll");
+  }
+}
+
+window.addEventListener("scroll", scrollToTop);
