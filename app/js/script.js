@@ -22,16 +22,16 @@ const linkAction = () => {
 
 navLink.forEach((link) => link.addEventListener("click", linkAction));
 
+// =========NAV ACTIVE SECTION COLOR ON SCROLL =========
 const sections = document.querySelectorAll("section[id]");
 
-let scrollActive = () => {
+const scrollActive = () => {
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
-
+    const sectionId = current.getAttribute("id");
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
         .querySelector(".nav__menu a[href*=" + sectionId + "]")
@@ -43,3 +43,5 @@ let scrollActive = () => {
     }
   });
 };
+console.log();
+window.addEventListener("scroll", scrollActive);
