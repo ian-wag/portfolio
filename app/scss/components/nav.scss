@@ -65,6 +65,10 @@
     bottom: 0;
   }
 
+  .active-link {
+    color: var(--primary);
+  }
+
   @include breakpoint-down(small) {
     &__menu {
       position: fixed;
