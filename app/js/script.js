@@ -72,7 +72,7 @@ function scrollToTop() {
 
 window.addEventListener("scroll", scrollToTop);
 
-// =========SHOW SCOLL TO TOP ICON ON SCROLL=========
+// =========DARK/LIGHT THEME=========
 const themeBtn = document.querySelector("#theme-button");
 const darkTheme = "dark-theme";
 const icon = "ai-sun";
