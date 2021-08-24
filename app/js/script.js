@@ -22,7 +22,7 @@ const linkAction = () => {
 
 navLink.forEach((link) => link.addEventListener("click", linkAction));
 
-// =========NAV ACTIVE SECTION COLOR ON SCROLL =========
+// =========NAV ACTIVE SECTION COLOR ON SCROLL=========
 const sections = document.querySelectorAll("section[id]");
 
 const scrollActive = () => {
@@ -46,10 +46,10 @@ const scrollActive = () => {
 console.log();
 window.addEventListener("scroll", scrollActive);
 
-// =========ADD BOX SHADOW TO NAV ON SCROLL =========
+// =========ADD BOX SHADOW TO NAV ON SCROLL=========
 
 function scrollNav() {
-  const nav = document.getElementById("header");
+  const nav = document.querySelector("#header");
 
   if (this.scrollY >= 80) {
     nav.classList.add("scroll-nav");
@@ -59,7 +59,7 @@ function scrollNav() {
 }
 window.addEventListener("scroll", scrollNav);
 
-// =========SHOW SCOLL TO TOP ICON ON SCROLL =========
+// =========SHOW SCOLL TO TOP ICON ON SCROLL=========
 function scrollToTop() {
   const scrollToTop = document.querySelector("#scroll-up");
 
@@ -71,3 +71,34 @@ function scrollToTop() {
 }
 
 window.addEventListener("scroll", scrollToTop);
+
+// =========SHOW SCOLL TO TOP ICON ON SCROLL=========
+const themeBtn = document.querySelector("#theme-button");
+const darkTheme = "dark-theme";
+const icon = "ai-sun";
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+const getCurrentTheme = () => {
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+};
+
+const getCurrentIcon = () => {
+  themeBtn.classList.contains(icon) ? "ai-moon" : "ai-sun";
+};
+
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeBtn.classList[selectedTheme === "ai-moon" ? "add" : "remove"](icon);
+}
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeBtn.classList.toggle(icon);
+
+  //Save theme to local storage
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});

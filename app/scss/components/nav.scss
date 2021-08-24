@@ -69,6 +69,11 @@
     color: var(--primary);
   }
 
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
   @include breakpoint-down(small) {
     &__menu {
       position: fixed;
@@ -105,10 +110,21 @@
 
   &__icon {
     font-size: 1.5rem;
-    color: hsl(0, 0%, 96%);
+    color: hsl(0, 0%, 100%);
   }
 }
 
 .show-scroll {
   bottom: 4rem;
+}
+
+.change-theme {
+  font-size: 1.1rem;
+  color: var(--title-color);
+  margin-right: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--primary);
+  }
 }
