@@ -54,4 +54,18 @@
       grid-column: 2;
     }
   }
+
+  @include breakpoint(nav) {
+    &__container {
+      column-gap: 5rem;
+    }
+
+    &__img {
+      width: rem(300);
+    }
+
+    &__buttons {
+      justify-content: initial;
+    }
+  }
 }

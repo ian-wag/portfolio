@@ -110,4 +110,23 @@
       fill: var(--primary);
     }
   }
+
+  @include breakpoint(nav) {
+    &__container {
+      row-gap: 5rem;
+    }
+
+    &__content {
+      padding-top: 5.5rem;
+      column-gap: 2rem;
+    }
+
+    &__scroll {
+      display: block;
+    }
+
+    &__scroll-button {
+      margin-left: 3rem;
+    }
+  }
 }

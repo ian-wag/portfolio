@@ -51,4 +51,9 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  @include breakpoint(nav) {
+    &__container div:first-child {
+      margin-bottom: var(--mb-8);
+    }
+  }
 }

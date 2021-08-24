@@ -17,6 +17,12 @@
   --z-modal: 1000;
 }
 
+body {
+  @include breakpoint(nav) {
+    margin: 0;
+  }
+}
+
 .container {
   max-width: rem(768);
   margin-left: var(--mb-5);
@@ -26,9 +32,30 @@
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
+  @include breakpoint(nav) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+.section {
+  @include breakpoint(nav) {
+    padding: 6rem 0 2rem;
+
+    &__subtitle {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+@include breakpoint(nav) {
+  .main {
+    padding: 0 1rem;
+  }
 }

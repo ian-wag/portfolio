@@ -59,4 +59,30 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  @include breakpoint(nav) {
+    &__container {
+      grid-template-columns: 1fr 2fr 1fr;
+      padding: 0 1rem;
+      align-items: baseline;
+    }
+
+    &__bg {
+      padding: 3rem 0 2rem;
+    }
+
+    &__links {
+      flex-direction: row;
+      column-gap: 2rem;
+      justify-self: center;
+    }
+
+    &__socials {
+      justify-self: flex-end;
+    }
+
+    &__copy {
+      margin-top: 6rem;
+    }
+  }
 }
