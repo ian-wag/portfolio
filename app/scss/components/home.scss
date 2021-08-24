@@ -25,6 +25,10 @@
     color: var(--primary-alt);
   }
 
+  &__name {
+    border-bottom: 4px solid var(--primary);
+  }
+
   &__blob {
     width: rem(200);
     fill: var(--primary);
