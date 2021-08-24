@@ -45,3 +45,17 @@ const scrollActive = () => {
 };
 console.log();
 window.addEventListener("scroll", scrollActive);
+
+// =========ADD BOX SHADOW TO NAV ON SCROLL =========
+
+function scrollNav() {
+  const nav = document.getElementById("header");
+
+  console.log(nav);
+  if (this.scrollY >= 80) {
+    nav.classList.add("scroll-nav");
+  } else {
+    nav.classList.remove("scroll-nav");
+  }
+}
+window.addEventListener("scroll", scrollNav);
