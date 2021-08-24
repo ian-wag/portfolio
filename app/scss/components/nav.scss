@@ -107,6 +107,10 @@
       display: none;
     }
 
+    &__logo {
+      border-bottom: 2px solid var(--primary);
+    }
+
     &__list {
       display: flex;
       column-gap: 2rem;
