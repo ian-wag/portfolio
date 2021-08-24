@@ -1,10 +1,10 @@
 {
-  "name": "gulp-sass-boilerplate",
+  "name": "ians-personal-website",
   "version": "1.0.0",
-  "description": "Minimal Gulp workflow to compile Sass",
+  "description": "A personal site to showcase my recent work and info",
   "keywords": [],
-  "author": "Jessica Chan (Coder Coder)",
-  "license": "ISC",
+  "author": "Ian Wagner",
+  "license": "",
   "dependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
