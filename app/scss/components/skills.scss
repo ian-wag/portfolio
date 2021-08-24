@@ -39,8 +39,8 @@
 
   @include breakpoint(medium) {
     &__content {
+      margin-left: 8rem;
       width: 100%;
-      justify-items: center;
     }
   }
 }

@@ -85,4 +85,10 @@
       margin-top: 6rem;
     }
   }
+
+  @include breakpoint(large) {
+    &__container {
+      padding: 0;
+    }
+  }
 }

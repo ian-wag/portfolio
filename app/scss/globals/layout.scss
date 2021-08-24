@@ -59,3 +59,9 @@ body {
     padding: 0 1rem;
   }
 }
+
+@include breakpoint(large) {
+  .main {
+    padding: 0;
+  }
+}

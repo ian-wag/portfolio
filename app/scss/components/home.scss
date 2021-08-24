@@ -107,7 +107,6 @@
 
     &__blob {
       width: rem(260);
-      fill: var(--primary);
     }
   }
 
@@ -127,6 +126,16 @@
 
     &__scroll-button {
       margin-left: 3rem;
+    }
+  }
+
+  @include breakpoint(large) {
+    &__blob {
+      width: rem(320);
+    }
+
+    &__socials {
+      transform: translateX(-6rem);
     }
   }
 }

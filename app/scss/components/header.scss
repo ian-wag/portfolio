@@ -13,4 +13,8 @@
     bottom: initial;
     padding: 0 1rem;
   }
+
+  @include breakpoint(large) {
+    padding: 0;
+  }
 }

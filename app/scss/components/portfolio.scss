@@ -56,4 +56,10 @@
       margin-bottom: var(--mb-8);
     }
   }
+
+  @include breakpoint(large) {
+    &__content {
+      column-gap: 2rem;
+    }
+  }
 }
