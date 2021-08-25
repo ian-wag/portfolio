@@ -24,6 +24,16 @@ function jsTask() {
     .pipe(dest("dist", { sourcemaps: "." }));
 }
 
+// htmlTask
+function htmlTast() {
+  return src("index.html").pipe(dest("dist"));
+}
+
+//assetTask
+function assetTask() {
+  return src("app/assets/img/*").pipe(dest("dist/app/assets/img"));
+}
+
 // Browsersync
 function browserSyncServe(cb) {
   browsersync.init({
@@ -55,3 +65,4 @@ function watchTask() {
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+exports.build = series(htmlTast, assetTask, scssTask, jsTask);
