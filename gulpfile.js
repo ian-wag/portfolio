@@ -16,6 +16,10 @@ function scssTask() {
     .pipe(dest("dist", { sourcemaps: "." }));
 }
 
+function htmlTask() {
+  return src("index.html").pipe(dest("dist"));
+}
+
 // JavaScript Task
 function jsTask() {
   return src("app/js/script.js", { sourcemaps: true })
@@ -55,4 +59,4 @@ function watchTask() {
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
-exports.build = series(scssTask, jsTask);
+exports.build = series(htmlTask, scssTask, jsTask);
