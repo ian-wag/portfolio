@@ -16,8 +16,8 @@ function scssTask() {
     .pipe(dest("dist", { sourcemaps: "." }));
 }
 
-function htmlTask() {
-  return src("index.html").pipe(dest("dist"));
+function build() {
+  return src("index.html").pipe(dest("dist")).pipe(scssTask()).pipe(jsTask());
 }
 
 // JavaScript Task
@@ -59,4 +59,4 @@ function watchTask() {
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
-exports.build = series(scssTask, jsTask, htmlTask);
+exports.build = build;
