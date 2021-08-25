@@ -19,6 +19,7 @@
 
   &__logo:hover {
     color: var(--primary);
+    border-bottom: 2px solid var(--title-color);
   }
 
   &__toggle {
