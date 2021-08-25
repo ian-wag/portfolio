@@ -24,11 +24,6 @@ function jsTask() {
     .pipe(dest("dist", { sourcemaps: "." }));
 }
 
-// HTML Task
-function htmlTask() {
-  return src("index.html").pipe(dest("dist"));
-}
-
 // Browsersync
 function browserSyncServe(cb) {
   browsersync.init({
@@ -60,6 +55,3 @@ function watchTask() {
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
-
-//Prod Build Task
-exports.build = series(scssTask, jsTask, htmlTask);
