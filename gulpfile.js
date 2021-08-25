@@ -7,13 +7,14 @@ const cssnano = require("cssnano");
 const babel = require("gulp-babel");
 const terser = require("gulp-terser");
 const browsersync = require("browser-sync").create();
+const replace = require("gulp-replace");
 
 // Sass Task
 function scssTask() {
   return src("app/scss/style.scss", { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(dest("dist/dist", { sourcemaps: "." }));
+    .pipe(dest("dist", { sourcemaps: "." }));
 }
 
 // JavaScript Task
@@ -21,12 +22,15 @@ function jsTask() {
   return src("app/js/script.js", { sourcemaps: true })
     .pipe(babel({ presets: ["@babel/preset-env"] }))
     .pipe(terser())
-    .pipe(dest("dist/dist", { sourcemaps: "." }));
+    .pipe(dest("dist", { sourcemaps: "." }));
 }
 
 // htmlTask
 function htmlTast() {
-  return src("index.html").pipe(dest("dist"));
+  return src("index.html")
+    .pipe(replace("dist/style.css", "style.css"))
+    .pipe(replace("dist/script.js", "script.js"))
+    .pipe(dest("dist"));
 }
 
 //assetTask
