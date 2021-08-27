@@ -331,32 +331,32 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact__form grid">
+          <form method="POST" data-netlify="true" class="contact__form grid" id='form-contact'>
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+                <label for="form-name" class="contact__label">Name</label>
+                <input id="form-name" name="form-name" type="text" class="contact__input" required/>
               </div>
               <div class="contact__content">
-                <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input" />
+                <label for="form-email" class="contact__label">Email</label>
+                <input id="form-email" name="form-email" type="email" class="contact__input" required/>
               </div>
             </div>
               <div class="contact__content">
-                <label for="" class="contact__label">Message</label>
+                <label for="form-message" class="contact__label">Message</label>
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
+                  id="form-message"
                   cols="0"
                   rows="8"
                   class="contact__input"
+                  required
                 ></textarea>
               </div>
-
               <div class="contact__button">
-                <a href="#" class="button button--flex"
-                  >Send Message <i class="uil uil-message button__icon"></i
-                ></a>
+                <button class="button button--flex button--form" type="submit" value="submit" form="form-contact">
+                  Send Message <i class="uil uil-message button__icon"></i>
+                </button>
               </div>
           </form>
         </div>
