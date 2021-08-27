@@ -1,0 +1,55 @@
+@use '../util' as *;
+
+.success {
+  background-color: var(--success-bg);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  place-items: center;
+
+  &__card {
+    min-height: rem(240);
+    max-width: rem(400);
+    place-items: center;
+    background-color: var(--success-card-color);
+    padding: 0 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.5rem -0.5rem hsla(0, 0%, 0%, 0.5);
+  }
+
+  &__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+  }
+
+  &__message {
+    color: var(--text-color);
+    text-align: center;
+  }
+
+  &__message-contact {
+    text-align: center;
+    margin-bottom: var(--mb-7);
+  }
+
+  &__back-link {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+  }
+
+  &__back-link:hover {
+    color: var(--primary);
+  }
+
+  &-email {
+    color: var(--text-color);
+    padding-bottom: 0.3rem;
+    border-bottom: 4px solid var(--primary);
+  }
+
+  &-email:hover {
+    color: var(--primary);
+  }
+}

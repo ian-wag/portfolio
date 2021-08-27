@@ -27,7 +27,7 @@ function jsTask() {
 
 // htmlTask
 function htmlTast() {
-  return src("index.html")
+  return src("*.html")
     .pipe(replace("dist/style.css", "style.css"))
     .pipe(replace("dist/script.js", "script.js"))
     .pipe(dest("dist"));

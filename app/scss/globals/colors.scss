@@ -11,6 +11,9 @@
   --container-color: hsl(0, 0%, 100%);
   --nextjs-icon-color: hsl(206, 22%, 15%);
   --port-btn: hsl(var(--hue), 69%, 61%);
+  --success-bg: hsl(var(--hue), 30%, 8%);
+  --success-text: hsl(var(--hue), 8%, 95%);
+  --success-card-color: hsl(227, 100%, 96%);
 }
 
 body.dark-theme {
