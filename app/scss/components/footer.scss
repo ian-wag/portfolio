@@ -47,6 +47,10 @@
     margin-top: 3rem;
   }
 
+  &__copy-link:hover {
+    color: hsl(0, 0%, 96%);
+  }
+
   &__title,
   &__subtitle,
   &__link,
