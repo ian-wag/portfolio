@@ -36,7 +36,7 @@
   }
 
   &__blob-img {
-    width: rem(220);
+    width: rem(420);
   }
 
   &__data {
@@ -111,7 +111,7 @@
     }
 
     &__blob {
-      width: rem(260);
+      width: rem(300);
     }
   }
 
@@ -136,7 +136,7 @@
 
   @include breakpoint(large) {
     &__blob {
-      width: rem(320);
+      width: rem(350);
     }
 
     &__socials {
