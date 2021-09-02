@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://ianwag.com/" />
+    <meta property="og:title" content="Ian Wagner | Front-End Dev" />
+    <meta property="og:description" content="My personal website to showcase who I am and what I do!" />
+    <meta property="og:image" content="https://ianwag.com/app/assets/img/ian-about4.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ianwag.com/">
+    <meta property="twitter:title" content="Ian Wagner | Front-End Dev">
+    <meta property="twitter:description" content="My personal website to showcase who I am and what I do!">
+    <meta property="twitter:image" content="https://ianwag.com/app/assets/img/ian-about4.png">
+
+    <meta name="description" content="My personal website to showcase who I am and what I do!">
+
     <!-- =========GOOGLE FONTS========= -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -84,6 +98,7 @@
                 target="_blank"
                 rel="noreferrer"
                 class="home__social-icon"
+                aria-label="linkedin"
               >
                 <i class="uil uil-linkedin-alt"></i>
               </a>
@@ -92,6 +107,7 @@
                 target="_blank"
                 rel="noreferrer"
                 class="home__social-icon"
+                aria-label="github"
               >
                 <i class="uil uil-github-alt"></i>
               </a>
@@ -127,7 +143,7 @@
               <h1 class="home__title">Hi, I'm<br> <span class="home__name">Ian Wagner!</span></h1>
               <h3 class="home__subtitle">Front-End Developer</h3>
               <p class="home__description">
-                I love to make great websites come to life!
+                I make websites great!
               </p>
               <a href="#contact" class="button button--flex">
                 Contact Me <i class="uil uil-message button__icon"></i>
@@ -146,35 +162,20 @@
       <!-- =========ABOUT========= -->
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My introduction</span>
+        <span class="section__subtitle">My intro</span>
         <div class="about__container container grid">
-          <img src="app/assets/img/ian-about4.png" alt="" class="about__img" />
+          <img src="app/assets/img/ian-about4.png" alt="a smiling Ian" class="about__img" />
           <div class="about__data">
             <p class="about__description">
-              Hello there! I'm a front-end developer who combines creativity
-              with current technologies to create responsive and engaging
-              websites. Coming from a background in the hospitality industry, I
-              am effective at multitasking and working in busy environments. I
-              also enjoy collaborating with other employees to be the bridge
-              between clients and consumers. When I am not working you can find
-              me trying out a new coffee shop in Logan Square or biking around
-              the 606 trail.
+              Hello there! I combine creativity with current technologies 
+              to create responsive and engaging websites. Coming from a 
+              background in the hospitality industry, I am effective 
+              at multitasking and operating in busy environments. I 
+              also enjoy collaborating with other employees to be 
+              the connection between clients and consumers. When I am 
+              not working, you can find me trying out a new coffee shop 
+              in Logan Square or biking up and down the 606 trail.
             </p>
-            <!-- <div class="about__info">
-              <div>
-                <span class="about__info-title">2+</span>
-                <span class="about__info-name"
-                  >Years <br />
-                  experience</span
-                >
-              </div>
-              <div>
-                <span class="about__info-title">10+</span>
-                <span class="about__info-name"
-                  >Completed <br />
-                  projects</span
-                >
-              </div> -->
             </div>
             <div class="about__buttons">
               <a href="/app/assets/IanWagnerResume.pdf" target="_blank" class="button button--flex">
@@ -245,7 +246,7 @@
             <div class="portfolio__content grid">
               <img
                 src="app/assets/img/airbnb-clone-desktop-nomenu.jpg"
-                alt=""
+                alt="airbnb clone preview"
                 class="portfolio__img"
               />
               <div class="portfolio__data">
@@ -275,7 +276,7 @@
             <div class="portfolio__content grid">
               <img
                 src="app/assets/img/e-commerce-desktop.jpg"
-                alt=""
+                alt="e-commerce site preview"
                 class="portfolio__img"
               />
               <div class="portfolio__data">
@@ -386,6 +387,7 @@
               target="_blank"
               rel="noreferrer"
               class="footer__social"
+              aria-label="linkedin"
             >
               <i class="uil uil-linkedin-alt"></i>
             </a>
@@ -394,6 +396,7 @@
               target="_blank"
               rel="noreferrer"
               class="footer__social"
+              aria-label="github"
             >
               <i class="uil uil-github-alt"></i>
             </a>
