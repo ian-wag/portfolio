@@ -35,7 +35,7 @@ function htmlTast() {
 
 //assetTask
 function assetTask() {
-  return src("app/assets/img/*").pipe(dest("dist/app/assets/img"));
+  return src("app/assets/**/*").pipe(dest("dist/app/assets/"));
 }
 
 // Browsersync
