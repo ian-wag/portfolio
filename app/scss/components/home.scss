@@ -1,5 +1,10 @@
-@use '../util' as *;
+@use "../util" as *;
+
 .home {
+  min-height: 100vh;
+  background-image: var(--home-bg);
+  background-size: cover;
+
   &__container {
     gap: 1rem;
   }
@@ -97,10 +102,6 @@
   }
 
   @include breakpoint(medium) {
-    &__content {
-      grid-template-columns: max-content 1fr 1fr;
-    }
-
     &__data {
       grid-column: initial;
     }
